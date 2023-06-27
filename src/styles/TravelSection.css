@@ -1,0 +1,9 @@
+.col {
+  padding: 0 0 15px 0;
+  border-radius: 15px;
+}
+
+.u-image-5 {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

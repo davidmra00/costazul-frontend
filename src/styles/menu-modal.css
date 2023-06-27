@@ -1,0 +1,79 @@
+.modal-content {
+  height: 100vh;
+  border-radius: 0px;
+  width: 100%;
+  overflow-y:auto;
+}
+
+.modal-dialog {
+  margin:0 !important;
+  width: 40vw;
+  max-width: 300px;
+}
+
+.modal {
+  padding-left: 0;
+  padding-right: 0 !important;
+}
+
+.u-menu-close:before {
+  content: "\2715";
+  font-size: 28px !important;
+  cursor: pointer;
+}
+
+.modal-header {
+  align-items: center;
+}
+
+.modal-body {
+  font-size: 1.3rem;
+}
+
+.active-link {
+  background-color: blue !important;
+  color: white !important;
+  border-color: transparent !important;
+}
+
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+.nav-link {
+  padding: 10px;
+  background-color: gray;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  background-color: blue;
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    width: 100vw;
+    max-width: 300px;
+  } 
+}
+
+@media (max-width: 575px) {
+  .modal-dialog {
+    width: 100vw;
+  } 
+}
+
+@media (max-width: 300px) {
+  .modal-dialog {
+    width: 100vw;
+    max-width: 100%;
+  } 
+}
