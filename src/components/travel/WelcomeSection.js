@@ -35,7 +35,7 @@ const WelcomeSection = () => {
   return (
     <>
       <section className="animate__animated animate__slideInDown u-clearfix u-section-1" id="sec-cec0">
-        <img className="u-expanded-width u-image u-image-1" alt="" src="/assets/images/1188c906f53cd7beac0e769db2dcd940f602ce7da0e5eb2b6bbb616ad3c133325607746c872bfdfd8d4d2afa9fbc10e14f33ffb7fe571cae6df01d_1280.jpg" data-image-width="1280" data-image-height="853" />
+        <img className="u-expanded-width u-image u-image-1" alt="" src="assets/images/1188c906f53cd7beac0e769db2dcd940f602ce7da0e5eb2b6bbb616ad3c133325607746c872bfdfd8d4d2afa9fbc10e14f33ffb7fe571cae6df01d_1280.jpg" data-image-width="1280" data-image-height="853" />
         <div className="u-border-2 u-border-grey-15 u-container-style u-group u-radius-5 u-shape-round u-white u-group-1">
           <div className="u-container-layout u-container-layout-1">
             <div className="u-absolute-hcenter u-expanded u-form">

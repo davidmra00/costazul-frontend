@@ -17,7 +17,7 @@ const AppRouter = () => {
   },[dispatch]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/costazul-frontend">
       <Routes>
         <Route
           path='/login'
