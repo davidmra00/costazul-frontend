@@ -13,19 +13,19 @@ const LoginDropdown = () => {
         id='dropdown-basic'
       >
         <div className='profile-min'>
-          <img src='/assets/icons/fotousuario.png' alt='' width='100%' height='100%' style={{borderRadius:'100%'}}/>
+          <img src='assets/icons/fotousuario.png' alt='' width='100%' height='100%' style={{borderRadius:'100%'}}/>
         </div>
       </Dropdown.Toggle>
       <Dropdown.Menu>
         <Link to='/login' style={{textDecoration:'none'}}>
           <Dropdown.Item
-            href='/login'
+            href='login'
             className='btn btn-custom'
           >Iniciar Sesión</Dropdown.Item>       
         </Link>
         <Link to='/register' style={{textDecoration:'none'}}>
           <Dropdown.Item
-            href='/register'
+            href='register'
             className='btn'
           >Registarse</Dropdown.Item>   
         </Link>

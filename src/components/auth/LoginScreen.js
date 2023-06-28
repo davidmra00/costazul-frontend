@@ -69,7 +69,7 @@ const LoginScreen = () => {
             <div className='container-form-1'>
                 <div className='login-form-1'>
                     <div className='logo-container'>
-                        <img src='/assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg' className='img-fluid' alt="" width="70%" height="70%" />
+                        <img src='assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg' className='img-fluid' alt="" width="70%" height="70%" />
                     </div>
                     <div>
                         <h3>Ingresar</h3>
@@ -110,7 +110,7 @@ const LoginScreen = () => {
                         onClick={handleGoogleLogin}
                     >
                         <div className='google-icon-container'>
-                            <img className='btn-google-img' src='/assets/icons/logogoogle.png' alt='' width='100%' height='100%' />
+                            <img className='btn-google-img' src='assets/icons/logogoogle.png' alt='' width='100%' height='100%' />
                         </div>
                         <p className='btn-google-text'>Continuar con google</p>
                     </button>

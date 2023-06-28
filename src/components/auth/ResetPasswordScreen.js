@@ -45,7 +45,7 @@ const ResetPasswordScreen = ({ token }) => {
       <div className='container-form-1'>
         <div className='login-form-1'>
           <div className='logo-container'>
-            <img src='/assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg' className='img-fluid' alt="" width="70%" height="70%" />
+            <img src='assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg' className='img-fluid' alt="" width="70%" height="70%" />
           </div>
           <div>
             <h3>Nueva contraseña</h3>

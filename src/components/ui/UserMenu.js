@@ -25,19 +25,19 @@ const UserMenu = ({nombre,admin,fotoUrl}) => {
         id='dropdown-basic'
       >
         <div className='profile-min'>
-          <img src={fotoUrl?fotoUrl:'/assets/icons/fotousuario.png'} alt='' width='100%' height='100%' style={{borderRadius:'100%'}}/>
+          <img src={fotoUrl?fotoUrl:'assets/icons/fotousuario.png'} alt='' width='100%' height='100%' style={{borderRadius:'100%'}}/>
         </div>
         {name}
       </Dropdown.Toggle>
       <Dropdown.Menu>
         <Dropdown.Item
-          href='/cuenta'
+          href='cuenta'
           className='dropdown-item-user'
         >Gestionar cuenta</Dropdown.Item>
         {
           admin &&
           <Dropdown.Item
-            href='/admin/viajes'
+            href='admin/viajes'
             className='dropdown-item-user'
           >Administrar</Dropdown.Item>
         }

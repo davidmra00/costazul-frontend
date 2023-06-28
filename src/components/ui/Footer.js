@@ -16,15 +16,15 @@ const Footer = () => {
                       <div className="u-block-container u-clearfix d-flex flex-column contactos">
                         <h3 className="u-block-header u-text text-center mb-3">Contactos</h3>
                           <div className='tel-container mt-2'>
-                            <img src='/assets/icons/telefono1.png' alt='' className='img-icon-footer' />
+                            <img src='assets/icons/telefono1.png' alt='' className='img-icon-footer' />
                             <p className='align-self-center m-0 ml-2'>+1 (561) 247 8996</p>
                           </div>
                           <div className='tel-container mt-2'>
-                            <img src='/assets/icons/whatsapp.png' alt='' className='img-icon-footer' />
+                            <img src='assets/icons/whatsapp.png' alt='' className='img-icon-footer' />
                             <Link to='https://wa.me/15617859797' className='align-self-center m-0 ml-2' style={{color:"white"}} target='_blank'>+1 (561) 785 9797</Link>
                           </div>
                           <div className='tel-container mt-2'>
-                            <img src='/assets/icons/correo.png' alt='' className='img-icon-footer' />
+                            <img src='assets/icons/correo.png' alt='' className='img-icon-footer' />
                             <p className='align-self-center m-0 ml-2'>costazultravel2@gmail.com</p>
                           </div>
                       </div>
@@ -37,13 +37,13 @@ const Footer = () => {
                   <h3 className='align-self-center mb-5 mt-1'>Redes Sociales</h3>
                   <div className='d-flex justify-content-evenly'>
                     <Link to="https://www.facebook.com/costazultravel2" target='_blank'>
-                      <img src="/assets/icons/facebook.png" alt="" className="redes-sociales" />
+                      <img src="assets/icons/facebook.png" alt="" className="redes-sociales" />
                     </Link>
                     <Link to="https://instagram.com/costazul_travel?igshid=NTc4MTIwNjQ2YQ==" target='_blank'>
-                      <img src="/assets/icons/instagram.jpg" alt="" className="redes-sociales" />
+                      <img src="assets/icons/instagram.jpg" alt="" className="redes-sociales" />
                     </Link>
                     <Link to="" target='_blank'>
-                      <img src="/assets/icons/tiktok.png" alt="" className="redes-sociales" />
+                      <img src="assets/icons/tiktok.png" alt="" className="redes-sociales" />
                     </Link>
                   </div>
                 </div>

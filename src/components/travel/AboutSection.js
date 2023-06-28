@@ -6,7 +6,7 @@ const AboutSection = () => {
       <section className="u-clearfix u-white u-section-2" id="carousel_302f">
         <p className="u-align-center u-text u-text-custom-color-2 u-text-1 u-text-1s2">ACERCA DE NUESTRA AGENCIA</p>
         <div className="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
-          <img className="u-image u-image-round u-radius-5 u-image-1" alt="" src="/assets/images/4dacc0144f2cb8d3684861c4dfcc133bb91e8374798d03f0a293cef765bd9f63a48a095ad7b1d322f9400997129621a1072e28e7f4fab9c18b4c27_1280.jpg" data-image-width="853" data-image-height="1280" />
+          <img className="u-image u-image-round u-radius-5 u-image-1" alt="" src="assets/images/4dacc0144f2cb8d3684861c4dfcc133bb91e8374798d03f0a293cef765bd9f63a48a095ad7b1d322f9400997129621a1072e28e7f4fab9c18b4c27_1280.jpg" data-image-width="853" data-image-height="1280" />
           <div className="u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-radius-5 u-shape-round u-white u-group-1">
             <div className="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-xl u-container-layout-1">
               <p className="u-custom-font u-text u-text-1">SOBRE NOSOTROS</p>

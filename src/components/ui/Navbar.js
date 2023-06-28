@@ -24,10 +24,10 @@ const Navbar = () => {
       <nav className="fixed-top u-align-center-sm u-align-center-xs u-border-1 u-border-grey-15 u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-white u-header" id="sec-cada">
         <div className="u-clearfix u-sheet u-sheet-1 container-footer d-flex">
           <div className='mr-5 open-menu' onClick={handleOpenModalMenu}>
-            <img src='/assets/icons/align-justify-svgrepo-com.svg' alt='' width='30' height='30' />
+            <img src='assets/icons/align-justify-svgrepo-com.svg' alt='' width='30' height='30' />
           </div>
           <Link to="/travel" className="u-image u-logo u-image-1 logo-navbar" data-image-width="1024" data-image-height="429">
-            <img src="/assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg" alt="" className="u-logo-image u-logo-image-1  nav-logo" />
+            <img src="assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg" alt="" className="u-logo-image u-logo-image-1  nav-logo" />
           </Link>
         </div>
         { 

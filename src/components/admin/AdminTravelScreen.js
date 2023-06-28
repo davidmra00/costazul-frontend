@@ -35,7 +35,7 @@ const AdminTravelScreen = () => {
           value={buscar}
         />
         <a
-          href='/admin/viajes/crear'
+          href='admin/viajes/crear'
           className='btn btn-primary'
         >Crear</a>
       </div>
@@ -54,7 +54,7 @@ const AdminTravelScreen = () => {
                 <td className='align-middle text-center'>{viaje.lugar}</td>
                 <td className='align-middle text-center'>{viaje.precio}</td>
                 <td className='align-middle text-center'>{moment(viaje.fechaInicio).add(1,'days').locale('es').format('D [de] MMMM [de] YYYY')}-{moment(viaje.fechaFin).add(1,'days').locale('es').format('D [de] MMMM [de] YYYY')}</td>
-                <td><a href={`/admin/viajes/${viaje._id}`}><p className='btn btn-info'>Editar</p></a></td>
+                <td><a href={`admin/viajes/${viaje._id}`}><p className='btn btn-info'>Editar</p></a></td>
                 <td><p className='btn btn-danger' onClick={()=>handleDelete(viaje._id)}>Eliminar</p></td>
               </tr>
             ))

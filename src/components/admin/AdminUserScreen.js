@@ -52,7 +52,7 @@ const AdminUserScreen = () => {
           value={buscar}
         />
         <a
-          href='/admin/usuarios/crear'
+          href='admin/usuarios/crear'
           className='btn btn-primary'
         >Crear</a>
       </div>
@@ -79,7 +79,7 @@ const AdminUserScreen = () => {
                   user.verificado?'Si':'No'
                 }
                 </td>
-                <td><a href={`/admin/usuarios/${user._id}`} className='btn btn-info'>Editar</a></td>
+                <td><a href={`admin/usuarios/${user._id}`} className='btn btn-info'>Editar</a></td>
                 <td><button className='btn btn-danger' onClick={()=>handleDelete(user._id)}>Eliminar</button></td>
               </tr>
             ))

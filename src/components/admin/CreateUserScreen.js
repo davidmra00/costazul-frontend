@@ -139,7 +139,7 @@ const CreateUserScreen = () => {
       <div className='user-form-container'>
         <form onSubmit={handleSave} className='user-form d-flex flex-column'>
           <div className='user-img-container align-self-center admin-img-container'>
-            <img className='user-img' src={!!photoUrl?photoUrl:'/assets/icons/fotousuario.png'} alt='' width='100%' height='100%' />
+            <img className='user-img' src={!!photoUrl?photoUrl:'assets/icons/fotousuario.png'} alt='' width='100%' height='100%' />
           </div>
           <input
             type='file'
@@ -150,7 +150,7 @@ const CreateUserScreen = () => {
             onChange={handleFile}
           />
           <div className='btn btn-demo edit d-flex align-self-center btn-photo mt-3 mb-3' onClick={handlePicture}>
-            <img src='/assets/icons/camara.png' className='align-self-center' height='36px' alt='' />
+            <img src='assets/icons/camara.png' className='align-self-center' height='36px' alt='' />
             <p className='m-0 align-self-center'>Elegir foto</p>
           </div>
 
@@ -168,7 +168,7 @@ const CreateUserScreen = () => {
             />
             {
               user && 
-              <img src='/assets/icons/editar.png' alt='' className='ml-1 edit' height='30px' onClick={handleEnableNombre} />
+              <img src='assets/icons/editar.png' alt='' className='ml-1 edit' height='30px' onClick={handleEnableNombre} />
             }
           </div>
           <div className='form-group d-flex'>
@@ -185,7 +185,7 @@ const CreateUserScreen = () => {
             />
             {
               user && 
-              <img src='/assets/icons/editar.png' alt='' className='ml-1 edit' height='30px' onClick={handleEnableCorreo} />
+              <img src='assets/icons/editar.png' alt='' className='ml-1 edit' height='30px' onClick={handleEnableCorreo} />
             }
           </div>
           <div className='form-group d-flex'>
@@ -202,7 +202,7 @@ const CreateUserScreen = () => {
             />
             {
               user && 
-              <img src='/assets/icons/editar.png' alt='' className='ml-1 edit' height='30px' onClick={handleEnableContrasenna} />
+              <img src='assets/icons/editar.png' alt='' className='ml-1 edit' height='30px' onClick={handleEnableContrasenna} />
             }
           </div>
           <div className='form-group'>

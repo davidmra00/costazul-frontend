@@ -35,7 +35,7 @@ const AdminOfferScreen = () => {
           value={buscar}
         />
         <a
-          href='/admin/ofertas/crear'
+          href='admin/ofertas/crear'
           className='btn btn-primary'
         >Crear</a>
       </div>
@@ -54,7 +54,7 @@ const AdminOfferScreen = () => {
                 <td className='align-middle text-center'>{oferta.lugar}</td>
                 <td className='align-middle text-center'>{oferta.precio}</td>
                 <td className='align-middle text-center'>{moment(oferta.fechaInicio).add(1,'days').locale('es').format('D [de] MMMM [de] YYYY')}-{moment(oferta.fechaFin).add(1,'days').locale('es').format('D [de] MMMM [de] YYYY')}</td>
-                <td><a href={`/admin/ofertas/${oferta._id}`}><p className='btn btn-info'>Editar</p></a></td>
+                <td><a href={`admin/ofertas/${oferta._id}`}><p className='btn btn-info'>Editar</p></a></td>
                 <td><p className='btn btn-danger' onClick={()=>handleDelete(oferta._id)}>Eliminar</p></td>
               </tr>
             ))
