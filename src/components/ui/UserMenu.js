@@ -31,13 +31,13 @@ const UserMenu = ({nombre,admin,fotoUrl}) => {
       </Dropdown.Toggle>
       <Dropdown.Menu>
         <Dropdown.Item
-          href='cuenta'
+          onClick={()=>{navigate('/cuenta')}}
           className='dropdown-item-user'
         >Gestionar cuenta</Dropdown.Item>
         {
           admin &&
           <Dropdown.Item
-            href='admin/viajes'
+            onClick={()=>{navigate('/admin/viajes')}}
             className='dropdown-item-user'
           >Administrar</Dropdown.Item>
         }
