@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/costazul-frontend/static/css/main.c1d136a1.css",
-    "main.js": "/costazul-frontend/static/js/main.e3f00cc9.js",
+    "main.js": "/costazul-frontend/static/js/main.a945ccde.js",
     "static/js/787.3e02a530.chunk.js": "/costazul-frontend/static/js/787.3e02a530.chunk.js",
     "static/media/_1280.jpg": "/costazul-frontend/static/media/a72ccfc21948cdbb633f90ee44d3de11d7d6883f36e64a3744bd662ad48a7a3349e2842404a68145210fcbbf2ca5ef3f96b876212964d81f0ec4b1_1280.2340b8d82c51bdba0417.jpg",
     "static/media/pexels-kampus-production-8428055.jpg": "/costazul-frontend/static/media/pexels-kampus-production-8428055.4b2e75dc0a42224353d1.jpg",
     "index.html": "/costazul-frontend/index.html",
     "main.c1d136a1.css.map": "/costazul-frontend/static/css/main.c1d136a1.css.map",
-    "main.e3f00cc9.js.map": "/costazul-frontend/static/js/main.e3f00cc9.js.map",
+    "main.a945ccde.js.map": "/costazul-frontend/static/js/main.a945ccde.js.map",
     "787.3e02a530.chunk.js.map": "/costazul-frontend/static/js/787.3e02a530.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1d136a1.css",
-    "static/js/main.e3f00cc9.js"
+    "static/js/main.a945ccde.js"
   ]
 }
