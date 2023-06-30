@@ -26,6 +26,10 @@ const OfferDetail = () => {
     dispatch(travelLoadTravelsAsync());
   },[dispatch]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[]);
+
   const {slug}=useParams();
   const lugar=slug.replace(/-/g,' ');
   

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/page-not-found.css';
+import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {
   return (
@@ -12,7 +13,7 @@ const PageNotFound = () => {
         <span><span>4</span></span>
       </section>
       <div className="link-container">
-        <a href='/' className="more-link">Volver al inicio</a>
+        <Link to='/' className="more-link">Volver al inicio</Link>
       </div>
     </div>
   )

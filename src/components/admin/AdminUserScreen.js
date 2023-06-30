@@ -5,6 +5,7 @@ import useForm from '../../hooks/useForm';
 import { userDeletebyAdminAsync, userGetUsersAsync } from '../../actions/userActions';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AdminUserScreen = () => {
   const dispatch = useDispatch();
@@ -51,10 +52,10 @@ const AdminUserScreen = () => {
           onChange={handleInputChange}
           value={buscar}
         />
-        <a
-          href='admin/usuarios/crear'
+        <Link
+          to='/admin/usuarios/crear'
           className='btn btn-primary'
-        >Crear</a>
+        >Crear</Link>
       </div>
       <table className="table table-striped table-hover">
         <thead>
@@ -79,7 +80,7 @@ const AdminUserScreen = () => {
                   user.verificado?'Si':'No'
                 }
                 </td>
-                <td><a href={`admin/usuarios/${user._id}`} className='btn btn-info'>Editar</a></td>
+                <td><Link to={`/admin/usuarios/${user._id}`} className='btn btn-info'>Editar</Link></td>
                 <td><button className='btn btn-danger' onClick={()=>handleDelete(user._id)}>Eliminar</button></td>
               </tr>
             ))

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const ServicesSection = () => {
   return (
@@ -42,7 +43,7 @@ const ServicesSection = () => {
               </span>
               <h3 className="u-align-center u-text u-text-white u-text-3">Recargas</h3>
               <p className="u-align-center u-text u-text-body-alt-color u-text-4">Disfruta de un servicio fácil y rápido,sin muchas complicaciones.Tus familiares recibirán el saldo al momento.</p>
-              <a href="recargas" className="u-active-none u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-white u-btn-2">Saber más</a>
+              <Link to="/recargas" className="u-active-none u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-white u-btn-2">Saber más</Link>
             </div>
           </div>
           <div className="u-container-style u-list-item u-repeater-item">
@@ -70,7 +71,7 @@ const ServicesSection = () => {
             </span>
               <h3 className="u-align-center u-text u-text-white u-text-5">Remesas</h3>
               <p className="u-align-center u-text u-text-body-alt-color u-text-6">Podemos entregar tu dinero en Cuba.Nuestra agencia se especializa en este servicio y cuenta con la confianza de la comunidad.</p>
-              <a href="remesas" className="u-active-none u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-white u-btn-3">Saber más</a>
+              <Link to="/remesas" className="u-active-none u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-white u-btn-3">Saber más</Link>
             </div>
           </div>
           <div className="u-container-style u-list-item u-repeater-item">
@@ -85,7 +86,7 @@ const ServicesSection = () => {
               </span>
               <h3 className="u-align-center u-text u-text-white u-text-1">Trámites Migratorios</h3>
               <p className="u-align-center u-text u-text-body-alt-color u-text-2">Nos especializamos en todo tipo de trámites migratorios.Nuestros expertos trabajan sobre la base de la experiencia y la profesionalidad.</p>
-              <a href="tramites" className="u-active-none u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-white u-btn-1">Saber más</a>
+              <Link to="/tramites" className="u-active-none u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-style u-hover-none u-none u-text-white u-btn-1">Saber más</Link>
             </div>
           </div>
         </div>

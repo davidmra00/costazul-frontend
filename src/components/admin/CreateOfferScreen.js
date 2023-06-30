@@ -34,6 +34,10 @@ const CreateOfferScreen = () => {
     dispatch(offerLoadOffersAsync());
   }, [dispatch]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[]);
+
   const { id } = useParams();
 
   const { offers } = useSelector(state => state.offer);

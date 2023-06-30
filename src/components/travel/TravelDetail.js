@@ -23,12 +23,16 @@ const TravelDetail = () => {
   useEffect(()=>{
     dispatch(travelLoadTravelsAsync());
   },[dispatch]);
-
+  
   const {slug}=useParams();
   const lugar=slug.replace(/-/g,' ');
   
   const {travels,checking}=useSelector(state=>state.travel);
   const travel=travels.find(travel=>travel.lugar.toLowerCase()===lugar);
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[travel]);
 
   const {nombre,verificado}=useSelector(state=>state.auth);
 

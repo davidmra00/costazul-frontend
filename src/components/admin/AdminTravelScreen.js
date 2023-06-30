@@ -4,6 +4,7 @@ import moment from 'moment';
 import { travelDeleteTravelsAsync, travelLoadTravelsAsync } from '../../actions/travelActions';
 import '../../styles/admin.css';
 import useForm from '../../hooks/useForm';
+import { Link } from 'react-router-dom';
 
 const AdminTravelScreen = () => {
   const dispatch = useDispatch();
@@ -34,10 +35,10 @@ const AdminTravelScreen = () => {
           onChange={handleInputChange}
           value={buscar}
         />
-        <a
-          href='admin/viajes/crear'
+        <Link
+          to='/admin/viajes/crear'
           className='btn btn-primary'
-        >Crear</a>
+        >Crear</Link>
       </div>
       <table className="table table-striped table-hover">
         <thead>
@@ -54,7 +55,7 @@ const AdminTravelScreen = () => {
                 <td className='align-middle text-center'>{viaje.lugar}</td>
                 <td className='align-middle text-center'>{viaje.precio}</td>
                 <td className='align-middle text-center'>{moment(viaje.fechaInicio).add(1,'days').locale('es').format('D [de] MMMM [de] YYYY')}-{moment(viaje.fechaFin).add(1,'days').locale('es').format('D [de] MMMM [de] YYYY')}</td>
-                <td><a href={`admin/viajes/${viaje._id}`}><p className='btn btn-info'>Editar</p></a></td>
+                <td><Link to={`/admin/viajes/${viaje._id}`}><p className='btn btn-info'>Editar</p></Link></td>
                 <td><p className='btn btn-danger' onClick={()=>handleDelete(viaje._id)}>Eliminar</p></td>
               </tr>
             ))

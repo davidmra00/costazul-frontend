@@ -16,6 +16,7 @@ body {
 
 .leaflet-container {
   width: 100%;
+  min-width: 258px;
   height: 100%;
   border-radius: 5px;
 }
@@ -133,6 +134,10 @@ body {
 
 .open-menu {
   cursor: pointer;
+}
+
+.u-footer .u-container-layout-2 {
+  min-width: 194px;
 }
 
 .u-section-1 {
@@ -2197,7 +2202,7 @@ body {
 }
 
 .u-section-7 .u-shape-1 {
-  height: 521px;
+  height: 531px;
   margin-top: 0;
   margin-bottom: 0;
   background-image: none;
@@ -2313,7 +2318,7 @@ body {
 
 @media (max-width: 1199px) {
   .u-section-7 .u-list-1 {
-    margin-top: -454px;
+    margin-top: -464px;
   }
 
   .u-section-7 .u-repeater-1 {
@@ -2393,11 +2398,11 @@ body {
   }
 
   .u-section-7 .u-shape-1 {
-    height: 991px;
+    height: 1071px;
   }
 
   .u-section-7 .u-list-1 {
-    margin-top: -991px;
+    margin-top: -1071px;
     margin-right: calc(((100% - 540px) / 2) + -62px);
     margin-bottom: 50px;
   }
@@ -2463,7 +2468,7 @@ body {
   }
 
   .u-section-7 .u-shape-1 {
-    height: 905px;
+    height: 955px;
     margin-top: 0;
   }
 
@@ -2471,7 +2476,7 @@ body {
     margin-right: initial;
     margin-left: initial;
     margin-bottom: 0;
-    margin-top: -921px;
+    margin-top: -961px;
     padding-bottom: 20px;
     width: auto;
   }

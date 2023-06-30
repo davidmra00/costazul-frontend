@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, LayersControl } from 'react-leaflet'
 
 const MapFooter = () => {
@@ -19,7 +20,7 @@ const MapFooter = () => {
       </LayersControl>
       <Marker position={[26.67925, -80.11150]}>
         <Popup>
-          <a href='https://maps.google.com/?cid=18146099936263355410&entry=gps'>Costazul Travel</a>
+          <Link target='_blank' to='https://maps.google.com/?cid=18146099936263355410&entry=gps'>Costazul Travel</Link>
         </Popup>
       </Marker>
 </MapContainer>

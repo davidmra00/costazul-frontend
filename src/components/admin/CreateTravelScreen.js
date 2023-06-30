@@ -34,6 +34,10 @@ const CreateTravelScreen = () => {
     dispatch(travelLoadTravelsAsync());
   }, [dispatch]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[]);
+
   const { id } = useParams();
 
   const { travels } = useSelector(state => state.travel);

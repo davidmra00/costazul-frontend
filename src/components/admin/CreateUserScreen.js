@@ -34,6 +34,10 @@ const CreateUserScreen = () => {
     dispatch(removeError());
   }, [dispatch]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[]);
+
   const { msgError } = useSelector(state => state.ui);
 
   const { id } = useParams();
