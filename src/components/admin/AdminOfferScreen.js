@@ -15,6 +15,10 @@ const AdminOfferScreen = () => {
     dispatch(offerLoadOffersAsync());
   }, [dispatch,offers]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[]);
+
   const [value,handleInputChange]=useForm({buscar:''});
   const {buscar}=value;
 

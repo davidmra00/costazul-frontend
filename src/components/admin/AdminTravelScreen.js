@@ -15,6 +15,10 @@ const AdminTravelScreen = () => {
     dispatch(travelLoadTravelsAsync());
   }, [dispatch,travels]);
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[]);
+
   const [value,handleInputChange]=useForm({buscar:''});
   const {buscar}=value;
 

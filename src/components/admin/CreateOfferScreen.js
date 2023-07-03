@@ -178,7 +178,7 @@ const CreateOfferScreen = () => {
               accept='image/*'
               onChange={(e) => handleFile(e, 0)}
             />
-            <img onClick={()=>handlePicture('fileSelectorPrincipal')} className="animate__animated animate__flipInX u-expanded-width-md u-expanded-width-sm u-image u-image-default u-image-1v" src={photos[0]?photos[0]:'assets/images/fotoviajes.png'} alt="" data-image-width="1280" data-image-height="854" />
+            <img onClick={()=>handlePicture('fileSelectorPrincipal')} className="animate__animated animate__flipInX u-expanded-width-md u-expanded-width-sm u-image u-image-default u-image-1v" src={photos[0]?photos[0]:'/costazul-frontend/assets/images/fotoviajes.png'} alt="" data-image-width="1280" data-image-height="854" />
             <div className="u-expanded-width-md u-expanded-width-sm u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
               <div className="u-gallery-inner u-gallery-inner-1">
                 {

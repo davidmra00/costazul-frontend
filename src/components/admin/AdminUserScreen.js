@@ -9,36 +9,40 @@ import { Link } from 'react-router-dom';
 
 const AdminUserScreen = () => {
   const dispatch = useDispatch();
-  const navigate=useNavigate();
-  const [users,setUsers]=useState([]);
+  const navigate = useNavigate();
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    dispatch(userGetUsersAsync()).then((users)=>setUsers(users));
-    }, [dispatch]);
-  
-  const [value,handleInputChange]=useForm({buscar:''});
-  const {buscar}=value;
+    dispatch(userGetUsersAsync()).then((users) => setUsers(users));
+  }, [dispatch]);
 
-  if(!users)
-  return navigate('/');
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  const usuarios=users.filter(user=>user.nombre.toLowerCase().includes(buscar.toLowerCase())); 
+  const [value, handleInputChange] = useForm({ buscar: '' });
+  const { buscar } = value;
 
-  const handleDelete=(id)=>{
+  if (!users)
+    return navigate('/');
+
+  const usuarios = users.filter(user => user.nombre.toLowerCase().includes(buscar.toLowerCase()));
+
+  const handleDelete = (id) => {
     Swal.fire({
-      title:'Está seguro?',
-      text:'No podrá recuperar su cuenta una vez eliminada',
-      icon:'warning',
-      showCancelButton:true,
-      confirmButtonColor:'#ff0000',
-      cancelButtonColor:'#00ff00',
-      confirmButtonText:'Eliminar cuenta'
-    }).then((result)=>{
-      if(result.isConfirmed){
+      title: 'Está seguro?',
+      text: 'No podrá recuperar su cuenta una vez eliminada',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#ff0000',
+      cancelButtonColor: '#00ff00',
+      confirmButtonText: 'Eliminar cuenta'
+    }).then((result) => {
+      if (result.isConfirmed) {
         dispatch(userDeletebyAdminAsync(id));
-        setUsers(users.filter(user=>user._id!==id));
+        setUsers(users.filter(user => user._id !== id));
       }
-    });  
+    });
   }
 
   return (
@@ -72,16 +76,16 @@ const AdminUserScreen = () => {
                 <td className='align-middle text-center'>{user.nombre}</td>
                 <td className='align-middle text-center'>
                   {
-                    user.admin?'Si':'No'
+                    user.admin ? 'Si' : 'No'
                   }
                 </td>
                 <td className='align-middle text-center'>
-                {
-                  user.verificado?'Si':'No'
-                }
+                  {
+                    user.verificado ? 'Si' : 'No'
+                  }
                 </td>
                 <td><Link to={`/admin/usuarios/${user._id}`} className='btn btn-info'>Editar</Link></td>
-                <td><button className='btn btn-danger' onClick={()=>handleDelete(user._id)}>Eliminar</button></td>
+                <td><button className='btn btn-danger' onClick={() => handleDelete(user._id)}>Eliminar</button></td>
               </tr>
             ))
           }

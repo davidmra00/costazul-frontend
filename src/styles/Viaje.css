@@ -3,6 +3,10 @@
   font-family: Poppins;
 }
 
+.incluyes-container {
+  display: none;
+}
+
 .admin-precio {
   width: 100px !important;
 }
@@ -297,7 +301,7 @@
   }
 
   .u-section-1v .admin-container-layout-1v {
-    margin-top: -207px !important;
+    margin-top: -167px !important;
   }
 
   .u-section-1v .u-container-layout-5 {
@@ -306,7 +310,7 @@
   }
 
   .u-section-1v .admin-container-layout-5 {
-    margin-top: -207px !important;
+    margin-top: -167px !important;
   }
 
   .u-section-1v .u-container-layout-7 {
@@ -323,7 +327,7 @@
   }
 
   .u-section-1v .u-text-1v2 {
-    width: 100%;
+    width: 50%;
     margin-top: 41px;
     margin-right: 439px;
     margin-left: 0;
@@ -339,6 +343,15 @@
 @media (max-width: 991px) {
   #sec-6548 {
     margin-top: 70px;
+  }
+
+  .u-section-3-viajes {
+    margin-top: -200px;
+  }
+
+  .incluyes-container {
+    display: flex;
+    margin-top: 100px;
   }
 
   .container-date {
@@ -366,6 +379,10 @@
     margin-top: -70px !important;
   }
 
+  .u-section-1v .layout-1v {
+    display: none;
+  }
+
   .u-section-1v .admin-container-layout-1v {
     margin-top: 250px !important;
     height: 0;
@@ -374,6 +391,10 @@
   .u-section-1v .u-container-layout-5 {
     padding: 10px;
     margin-top: -70px !important;
+  }
+
+  .u-section-1v .layout-5 {
+    display: none;
   }
 
   .u-section-1v .admin-container-layout-5 {
@@ -545,6 +566,10 @@
     margin-top: 70px;
   }
 
+  .incluyes-container {
+    margin-top: 200px;
+  }
+
   .admin-form {
     height: 1810px;
   }
@@ -563,7 +588,7 @@
 
   .u-section-1v .u-sheet-1v {
     min-height: 65px;
-    width: 100vw !important;
+    width: 90vw !important;
   }
 
   .u-section-1v .u-container-layout-1v {
@@ -586,17 +611,13 @@
 
   .u-section-1v .u-image-1v {
     width: 100%;
-    height: 100%;
-    margin-left: -30px;
-    margin-right: -30px;
+    height: 50vw;
   }
 
   .u-section-1v .u-gallery-1 {
     height: 282px;
     width: 100%;
     margin-top: 10px;
-    margin-left: -30px;
-    margin-right: -30px;
   }
 
   .u-section-1v .u-text-1v {

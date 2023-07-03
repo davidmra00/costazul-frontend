@@ -279,8 +279,11 @@ body {
   .u-section-1 .u-text-2 {
     width: 90vw;
   }
-} .u-section-2 {
+} 
+
+.u-section-2 {
   background-image: none;
+  margin-top: 100px;
 }
 
 .u-section-2 .u-sheet-1 {

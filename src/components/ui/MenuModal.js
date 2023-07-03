@@ -28,7 +28,7 @@ const MenuModal = () => {
       >
         <Modal.Header>
           <div>
-            <img src='assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg' className='img-fluid' alt="" width="60%" height="70%" />
+            <img src='/costazul-frontend/assets/images/WhatsAppImage2023-04-29at10.11.19AM.jpeg' className='img-fluid' alt="" width="60%" height="70%" />
           </div>
           <div className="u-menu-close" onClick={closeModalMenu}></div>
         </Modal.Header>
